@@ -1,0 +1,83 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body{
+	width: 1280px;
+	height: 913px;
+	background-color: rgba(29,45,59,0.8);
+}
+header{
+	width: 1280px;
+	height: 100px;
+	padding: 50px 200px;	
+	
+	
+}
+#tit{
+	color: #fff;	
+	text-align: center;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+}
+#tit:hover{
+    color: #979D3B;
+	box-shadow: 0 0 10px #979D3B;
+}
+#uno{
+	background-color:rgb(143,146,132);
+	margin-top: 100px;
+	height: 60%;
+}
+p{
+	color: #fff;
+	font-family: 'Kalam', cursive;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+#ham{
+	width: 400px;
+	margin-top: 30px;
+	margin-left: 410px;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.b1{
+	position: relative;
+	font-family: Copperplate Gothic;
+	display: inline-block;
+	padding: 15px 30px;	
+	letter-spacing: 4px;
+	font-size: 15px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	float: right;
+	margin-right: 20px;
+	margin-top: 60px;
+}
+.b1:hover{
+	background-color: #979D3B;
+	box-shadow: 0 0 10px #979D3B, 0 0 40px #979D3B, 0 0 80px #979D3B;
+}
+footer{
+	text-align: center;
+	margin-top: 30px;
+	font-family: French Script MT;
+	font-size: 30px;
+	color: #fff;
+	
+}

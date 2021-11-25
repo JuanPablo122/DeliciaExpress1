@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body{
+	width: 1280px;
+	height: 1710px;
+	background-color: rgba(29,45,59,0.8);
+}
+header{
+	width: 1280px;
+	height: 100px;
+	padding: 50px 200px;	
+	
+	
+}
+#tit{
+	color: #fff;	
+	text-align: center;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+}
+#tit:hover{
+    color: #979D3B;
+	box-shadow: 0 0 10px #979D3B;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+footer{
+	text-align: center;
+	margin-top: 40px;
+	font-family: French Script MT;
+	font-size: 30px;
+	color: #fff;
+	
+}
+header nav{	
+	position:absolute;
+	height: 70px;
+	line-height: 60px;
+	width: 60%;	
+	margin-top: 30px;	
+	margin-left: 50px;
+	background-color:rgb(143,146,132);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+		
+}
+header nav #menu{
+	list-style: none;		
+}
+#menu > li{	
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 60px;	
+}
+#menu > li > a{
+	display: block;	
+	color: #000;
+	font-family: open sans;
+	text-decoration: none;
+	border-radius: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+
+}
+#menu li a:hover{
+	color: #fff;
+	transition: all .5s;
+	background:rgba(100,105,81,0.8);	
+}
+#menup{
+	background-color: rgb(143,146,132);
+	margin-top: 100px;
+	display: flex;
+}
+#menup1{
+	background-color: rgb(143,146,132);
+	display: flex;
+}
+#menup2{
+	background-color: rgb(143,146,132);
+	display: flex;
+}
+#menup3{
+	background-color: rgb(143,146,132);
+	display: flex;
+}
+
+.perro{
+	margin-top: 60px;
+	margin-left: 80px;
+	width: 500px;
+	background-color: #fff;
+	padding: 10px 8px 10px 8px;
+	box-shadow: 3px 3px 8px;
+}
+.listmenu{
+	margin-top: -150px;
+	list-style-type: none;
+	font-size: 20px;
+	font-family: 'Kalam', cursive;
+	float: left;
+	margin-left: 30px;
+}
+.img{
+	margin-right: 20px;
+	float: right;
+	margin-top: 6px;
+	width: 200px;
+	height: 150px;
+}
+.precio{
+	list-style-type: none;
+	color: #00A8FF;
+}
+#perro{
+	margin-bottom: 50px;
+	margin-top: 60px;
+	margin-left: 125px;
+	width: 1000px;
+	background-color: #fff;
+	padding: 10px 8px 10px 8px;
+	box-shadow: 3px 3px 8px;
+}
+#img{
+	margin-right: 20px;
+	float: right;
+	margin-top: 6px;
+	width: 200px;
+	height: 200px;
+}
+#listmenu{
+	list-style-type: none;
+	font-size: 20px;
+	font-family: 'Kalam', cursive;
+	float: left;
+	margin-left: 30px;
+}
+button{
+	margin-left: 320px;
+}
+
+/*El button: active permite que cambie el color de fondo cuando se hace click
+	en este caso representaria que ya se agrego el producto al carrito de compras*/
+button:active{
+	background-color: #00A8FF;
+}

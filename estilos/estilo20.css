@@ -1,0 +1,96 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body{
+	width: 1280px;
+	height: 1000px;
+	background-color: rgba(29,45,59,0.8);
+}
+header{
+	width: 1280px;
+	height: 100px;
+	padding: 80px 450px;		
+	transition: all 1.5s;
+
+}
+#tit{
+	color: #fff;
+	text-align: center;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+	margin-top: 50px;
+}
+#tit:hover{
+    color: #979D3B;
+	box-shadow: 0 0 10px #979D3B, 0 0 40px #979D3B, 0 0 80px #979D3B;
+}
+h2{
+	margin-top: 80px;
+	margin-left: 600px;
+	color: #fff;
+}
+p{
+	color: #fff;
+	font-family: 'Kalam', cursive;
+	margin-top: 70px;
+	margin-left:50px; 
+	margin-right: 52px;
+	text-align: justify;
+
+}
+ul{
+	font-family: 'Kalam',cursive;
+	color: #fff;
+	margin-top: 70px;
+	margin-left:70px; 
+	margin-right: 12px;
+}
+#uno{
+	padding-bottom: 25px; 
+	margin-left: 300px;
+	width: 700px;
+	text-align: center;
+	background-color: rgb(143,146,132);
+	border-radius: 12px;
+	
+}
+
+a{
+	text-decoration: none;
+}
+button{
+	margin-top: 30px;
+	margin-right: 60px; 
+	float: right;
+	font-family: Copperplate Gothic;
+	padding: 15px 30px;
+	letter-spacing: 4px;
+	font-size: 15px;
+}
+button:hover{
+	background-color: #979D3B;
+	box-shadow: 0 0 10px #979D3B, 0 0 40px #979D3B, 0 0 80px #979D3B;
+}
+footer{
+	margin-top: 80px;
+}
+#textfooter{
+	font-family: French Script MT;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+#logo{
+	height: 90px;
+	width: 90px;
+	margin-left: 40px;	
+}

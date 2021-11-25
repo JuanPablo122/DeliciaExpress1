@@ -1,0 +1,101 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body{
+	width: 1280px;
+	height: 913px;
+	background-color: rgba(29,45,59,0.8);
+}
+header{
+	width: 1280px;
+	height: 100px;
+	padding: 90px 200px;	
+	
+	
+}
+
+div{
+	background-color:rgb(143,146,132);
+	height:55%;
+	margin-top: 50px;
+}
+#tit{
+	color: #fff;	
+	text-align: center;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+}
+#tit:hover{
+    color: #979D3B;
+	box-shadow: 0 0 10px #979D3B;
+}
+h2{
+	font-size: 35px;
+	text-align: center;
+	padding-top: 20px;
+	font-family: elephant;
+}
+
+footer{
+	text-align: center;
+	margin-top: 40px;
+	font-family: French Script MT;
+	font-size: 30px;
+	color: #fff;
+	
+}
+header nav{	
+	position:absolute;
+	height: 60px;
+	line-height: 60px;
+	width: 70%;	
+	margin-top: 30px;
+	background-color:rgb(143,146,132);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+
+}
+header nav .l1{
+	color: #fff;
+	display: inline-block;
+	padding: 10px 15px;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: 140px;
+
+}
+header nav .l1:hover{
+	background:rgba(100,105,81,0.8);
+
+}
+table{
+	border: 2px #000000 solid; 
+	border-collapse: collapse;
+	text-align: center;	
+	font-weight: bold;
+	margin-left: 370px;
+}
+tr td{
+	border: 2px #000000 solid;
+	background-color: #fff;
+	padding: 15px 50px;
+}
+button{
+	margin-top: 20px;
+	margin-left: 400px;
+	padding: 10px 20px;
+	
+}
+button:hover{
+	background-color: #979D3B;
+	box-shadow: 0 0 10px #979D3B, 0 0 40px #979D3B, 0 0 80px #979D3B;
+}

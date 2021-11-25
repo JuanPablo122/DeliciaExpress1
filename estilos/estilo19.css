@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+}
+body{
+	width: 1400px;
+	height: 2024px;
+	background-color: rgba(29,45,59,0.8);
+}
+header{
+	width: 1280px;
+	height: 100px;
+	padding: 90px 200px;	
+	
+	
+}
+header nav{	
+	position:absolute;
+	height: 60px;
+	line-height: 60px;
+	width: 35%;	
+	margin-top: 30px;
+	margin-left: 210px;
+	background-color:rgb(143,146,132);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	padding-left: 25px;
+
+}
+header nav .l1{
+	color: #fff;
+	display: inline-block;
+	padding: 10px 60px;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 5px;
+
+}
+header nav .l1:hover{
+	background:rgba(100,105,81,0.8);
+
+
+}
+#tit{
+	color: #fff;	
+	text-align: center;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+}
+#tit:hover{
+    color: #979D3B;
+	box-shadow: 0 0 10px #979D3B;
+}
+.subt{
+	font-family: 'Kalam', cursive;
+	color: #fff;
+
+}
+.table{
+	border:2px none solid;
+	text-align: center;
+	margin-top: 3%;
+	margin-left: 10%;
+	margin-right: 15%;
+
+}
+#tr1{
+	font-weight: bold;
+}
+td{
+	border: 2px #000000 solid;
+	background-color: #fff;
+	padding: 10px;
+}
+.Main{
+	background-color:rgb(143,146,132);
+	margin-bottom: initial;
+	height: 65%;
+	margin-top: 50px;
+	padding-top: 3%;
+}
+.main1{
+	margin-top: 10px;
+	background-color:rgb(143,146,132);
+	height: 65%;
+	padding-top: 3%;
+}
+.subt1{
+	font-family: 'Kalam', cursive;
+	color: #fff;
+
+}
+#tabla1{
+	border:2px none solid;
+	text-align: center;
+	margin-top: 8%;
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+.boton1{
+	margin-top: 1%;
+	margin-left: 920px;
+	font-family: 'Kalam', cursive;
+	font-size: 16px;
+	width: 150px;
+    height: 50px;
+}
+.boton2{
+	float: right;
+    margin-top: 1%;
+	margin-right: 170px;	
+	font-family: 'Kalam', cursive;
+	font-size: 16px;
+	width: 150px;
+    height: 50px;
+}
+
+#boton3{
+	float: right;
+	margin-top: 2%;
+	margin-right: 50px;
+	font-family: 'Kalam', cursive;
+	font-size: 16px;
+	width: 150px;
+    height: 50px;
+}

@@ -1,0 +1,116 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+	background-image: url(../imagenes/fondo.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+body{
+	width: 1280px;
+	height: 913px;
+	background-color: rgba(29,45,59,0.8);
+}
+header{
+	width: 1280px;
+	height: 100px;
+	padding: 50px 200px;	
+	
+	
+}
+#tit{
+	color: #fff;	
+	text-align: center;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+}
+#tit:hover{
+    color: #979D3B;
+	box-shadow: 0 0 10px #979D3B;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+footer{
+	text-align: center;
+	margin-top: 180px;
+	font-family: French Script MT;
+	font-size: 30px;
+	color: #fff;
+	
+}
+header nav{	
+	position:absolute;
+	height: 70px;
+	line-height: 60px;
+	width: 60%;	
+	margin-top: 30px;	
+	margin-left: 50px;
+	background-color:rgb(143,146,132);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+		
+}
+header nav #menu{
+	list-style: none;		
+}
+#menu > li{	
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 60px;	
+}
+#menu > li > a{
+	display: block;	
+	color: #000;
+	font-family: open sans;
+	text-decoration: none;
+	border-radius: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+
+}
+#menu li a:hover{
+	color: #fff;
+	transition: all .5s;
+	background:rgba(100,105,81,0.8);	
+}
+#pd{
+	display: flex;
+	background-color: rgb(143,146,132);
+}
+.categorias{
+	margin-bottom: 100px;
+	margin-top: 100px;
+	margin-left: 160px;
+}
+img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+#img{
+	margin-left: 20px;
+}
+#img1{
+	margin-left: 25px;
+}
+#img2{
+	margin-left: -20px;
+}
+.texto{
+	font-size: 20px;
+	font-family: 'Kalam', cursive;
+	font-weight: bold;
+}
+#texto{
+	padding: 10px 20px 10px 550px;
+	font-family: 'Kalam', cursive;
+	background-color: rgb(143,146,132);
+	margin-top: 100px;
+}
