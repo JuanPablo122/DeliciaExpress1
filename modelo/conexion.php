@@ -1,17 +1,17 @@
 <?php
-$servername = "sql437.main-hosting.eu";
+/*$servername = "sql437.main-hosting.eu";
 $username = "u991668360_daniela";
 $password = "Daniela322";
 $port=3306;
-$bd="deliciaExpress";
-/*$servername = "localhost";
+$bd="deliciaExpress";*/
+$servername = "localhost";
 $username = "root";
 $password = "";
-$bd="deliciaExpress";*/
+$bd="deliciaExpress";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $bd, $port);
-$mysqli -> new mysqli(host, username, password, dbname, port, socket)
+$conn = new mysqli($servername, $username, $password, $bd);
+
 
 // Check connection
 /*if ($conn->connect_error) {

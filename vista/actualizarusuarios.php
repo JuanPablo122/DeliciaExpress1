@@ -1,10 +1,9 @@
 <?php 
-$consulta= consultarPersona($_GET['IdUsuarios']);
-
-function consultarPersona($id){
-    include '../conexion/conexion2.php';
+include '../conexion/conexion.php';
+class Consultar extends Conexion{
+public function consultarPersona($id){
     $sentencia="SELECT * FROM usuarios WHERE IdUsuarios='".$id."'";
-    $resultado=$conexion->query($sentencia) or die ("Error de conexion".mysqli_error($conexion));
+    $resultado=$cnx->query($sentencia) or die ("Error de conexion".mysqli_error($cnx));
     $fila=$resultado->fetch_assoc();
 return[
     $fila['IdUsuarios'],
@@ -16,6 +15,8 @@ return[
 	$fila['IdTipos'],
 	$fila['Eps']
 ];
+$consulta= consultarPersona($_GET['IdUsuarios']);
+}
 }
 
 ?>
