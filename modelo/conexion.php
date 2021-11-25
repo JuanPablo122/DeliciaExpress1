@@ -11,6 +11,7 @@ $bd="deliciaExpress";*/
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $bd, $port);
+$mysqli -> new mysqli(host, username, password, dbname, port, socket)
 
 // Check connection
 /*if ($conn->connect_error) {
