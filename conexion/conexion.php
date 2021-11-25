@@ -1,8 +1,8 @@
 <?php 
 class Conexion{    
-    private $dsn='mysql:host=localhost;dbname=deliciaexpress';
-    private $usr='root';
-    private $psw='';  
+    private $dsn='mysql:host=sql437.main-hosting.eu;port=3306;dbname=u991668360_deliciaexpress';
+    private $usr='u991668360_daniela';
+    private $psw='Daniela322';  
     private $cnx;
 public function __construct(){
     try {

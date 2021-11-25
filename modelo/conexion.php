@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "sql437.main-hosting.eu";
+$username = "u991668360_daniela";
+$password = "Daniela322";
 $bd="deliciaExpress";
 
 // Create connection
