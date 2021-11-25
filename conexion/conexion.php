@@ -7,7 +7,7 @@ class Conexion{
     /*private $dsn='mysql:host=localhost;dbname=deliciaexpress';
     private $usr='root';
     private $psw='';  
-    private $cnx;*/
+    private $cnx;;*/
 public function __construct(){
     try {
         $this->cnx=new PDO($this->dsn,$this->usr,$this->psw);
