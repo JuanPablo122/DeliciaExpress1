@@ -15,7 +15,7 @@
 	<a href="vista/normacmm.php"><button>Norma CMM</button></a>
 	<a href="vista/misionVision.php"><button>Misión / Vision</button></a>
 	<a href="vista/registrocliente.php"><button>Registrate</button></a>
-	<a href="vista/iniciosesion.php"><button>Inicia Sesión</button></a>
+	<a href="vista/iniciosesion.php"><button>Start session</button></a>
 <header id="hed">
 	<h1 id="tit">DELICIA EXPRESS</h1>
 </header>
