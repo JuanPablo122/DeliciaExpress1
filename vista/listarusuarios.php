@@ -81,6 +81,7 @@ include('../controlador/controladorlistar.php');
 					<th>Nombre del Restaurante</th>
 					<th>Celular del Restaurante</th>
 					<th>Barrio</th>
+					<th>IdRoles</th>
 					<th>Acciones</th>
                 </tr>
             </thead>
@@ -98,7 +99,8 @@ include('../controlador/controladorlistar.php');
 			<td><?php echo  $key->getNIT() ?></td>  
 			<td><?php echo  $key->getNomRes() ?></td> 
 			<td><?php echo  $key->getCelularRes() ?></td>  
-			<td><?php echo  $key->getBarrio() ?></td>      
+			<td><?php echo  $key->getBarrio() ?></td>
+			<td><?php echo  $key->getIdRoles() ?></td>       
 			<td>		
 			<a href="../controlador/controladoreliminarres.php?IdRestaurantes=<?php echo $key->getIdRestaurantes();?>"><input type="submit" value="Eliminar" ></a>
 			<a href="../vista/actualizarrestaurantes.php?IdRestaurantes=<?php echo $key->getIdRestaurantes();?>"><input type="submit" value="Actualizar" name="update"></a>

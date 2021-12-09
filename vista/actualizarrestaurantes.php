@@ -1,27 +1,40 @@
 <?php 
-$consulta= consultarPersona($_GET['IdRestaurantes']);
+include '../conexion/conexion.php';
+class Consultar extends Conexion{
 
-function consultarPersona($id){
-    include '../conexion/conexion2.php';
-    $sentencia="SELECT * FROM restaurantes WHERE IdRestaurantes='".$id."'";
-    $resultado=$conexion->query($sentencia) or die ("Error de conexion".mysqli_error($conexion));
-    $fila=$resultado->fetch_assoc();
-return[
-    $fila['IdRestaurantes'],
-    $fila['NombresDue'],
-    $fila['Email'],
-    $fila['NumeroDue'],
-    $fila['Contrasena'],
-    $fila['TipoPersona'],
-	$fila['NIT'],
-	$fila['NomRes'],
-    $fila['CelularRes'],
-	$fila['Barrio'],
-	$fila['IdRoles']
-];
+
+public function consultarRestaurante($id){
+    //$sentencia="SELECT * FROM usuarios WHERE IdUsuarios='".$id."'";
+    //$resultado=$this->getCnx()->query($sentencia) or die ("Error de conexion".mysqli_error($this->getCnx()));
+    //$fila=$resultado->fetch_assoc();
+	//$statement=$this->getCnx()->prepare("SELECT * FROM usuarios WHERE IdUsuarios='".$id."'");
+	$statement=$this->getCnx()->prepare("select * from restaurantes WHERE IdRestaurantes='".$id."'");
+	$statement->execute();
+	$fila;
+	foreach ($statement as $key) {
+	$fila[0]=$key['IdRestaurantes'];
+    $fila[1]=$key['NombresDue'];
+    $fila[2]=$key['Email'];
+    $fila[3]=$key['NumeroDue'];
+    $fila[4]=$key['Contrasena'];
+    $fila[5]=$key['TipoPersona'];
+	$fila[6]=$key['NIT'];
+	$fila[7]=$key['NomRes'];
+	$fila[8]=$key['CelularRes'];
+	$fila[9]=$key['Barrio'];
+	$fila[10]=$key['IdRoles'];
+	}
+	
+return $fila;
+
 }
 
+}
+
+$obj=new Consultar();
+$consulta= $obj->consultarRestaurante($_GET['IdRestaurantes']);
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <script src="../js/control.js"></script>

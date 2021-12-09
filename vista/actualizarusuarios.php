@@ -8,7 +8,7 @@ public function consultarPersona($id){
     //$resultado=$this->getCnx()->query($sentencia) or die ("Error de conexion".mysqli_error($this->getCnx()));
     //$fila=$resultado->fetch_assoc();
 	//$statement=$this->getCnx()->prepare("SELECT * FROM usuarios WHERE IdUsuarios='".$id."'");
-	$statement=$this->getCnx()->prepare("select * from usuarios ORDER BY NombreUsuarios");
+	$statement=$this->getCnx()->prepare("select * from usuarios WHERE IdUsuarios='".$id."'");
 	$statement->execute();
 	$fila;
 	foreach ($statement as $key) {
@@ -27,10 +27,10 @@ return $fila;
 }
 
 }
-//
+
 $obj=new Consultar();
 $consulta= $obj->consultarPersona($_GET['IdUsuarios']);
-echo '*****************'.var_dump($consulta[0]);
+
 
 ?>
 <!DOCTYPE html>

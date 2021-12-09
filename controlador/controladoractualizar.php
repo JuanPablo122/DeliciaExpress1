@@ -9,7 +9,6 @@
 </head>
 <body>
 <?php 
-require('../vista/actualizarusuarios.php');
 require('../dao/daoUsuariosImpl.php');
 $dao=new DaoUsuariosImpl();
 if (isset($_GET['update'])) {

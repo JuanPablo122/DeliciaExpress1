@@ -9,7 +9,6 @@
 </head>
 <body>
 <?php 
-require('../vista/actualizarrestaurantes.php');
 require('../dao/daoUsuariosImpl.php');
 $dao=new DaoRestaurantesImpl();
 if (isset($_GET['update'])) {
@@ -26,7 +25,6 @@ if (isset($_GET['update'])) {
     $IdRoles=$_GET['idrol'];
     $a1=new Restaurantes($IdRestaurantes,$NombresDue,$Email,$NumeroDue,$Contrasena,$TipoPersona,$NIT,$NomRes,$CelularRes,$Barrio,$IdRoles);
     $dao->modificar1($a1);
-    echo '<span class="mensaje">¡¡SE ACTUALIZÓ CORRECTAMENTE!!</span>';
     header ("Location: ../vista/listarusuarios.php");
 }
 ?> 
