@@ -10,9 +10,9 @@ class Conexion{
     private $cnx;
 public function __construct(){
     try {
-        $this->cnx=new PDO($this->dsn,$this->usr,$this->psw);
+        $this->cnx=new PDO($this->dsn,$this->usr,$this->psw);        
     } catch (PDOException $th) {
-        echo $th->getMessage();
+        echo 'CATCH DE LA CONEXION'.$th->getMessage();
     }
 }
 public function desconectar(){

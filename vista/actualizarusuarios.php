@@ -1,23 +1,36 @@
 <?php 
 include '../conexion/conexion.php';
 class Consultar extends Conexion{
+
+
 public function consultarPersona($id){
-    $sentencia="SELECT * FROM usuarios WHERE IdUsuarios='".$id."'";
-    $resultado=$cnx->query($sentencia) or die ("Error de conexion".mysqli_error($cnx));
-    $fila=$resultado->fetch_assoc();
-return[
-    $fila['IdUsuarios'],
-    $fila['NombreUsuarios'],
-    $fila['ApellidoUsuarios'],
-    $fila['EmailUsuarios'],
-    $fila['ContrasenaUsuarios'],
-    $fila['IdRoles'],
-	$fila['IdTipos'],
-	$fila['Eps']
-];
-$consulta= consultarPersona($_GET['IdUsuarios']);
+    //$sentencia="SELECT * FROM usuarios WHERE IdUsuarios='".$id."'";
+    //$resultado=$this->getCnx()->query($sentencia) or die ("Error de conexion".mysqli_error($this->getCnx()));
+    //$fila=$resultado->fetch_assoc();
+	//$statement=$this->getCnx()->prepare("SELECT * FROM usuarios WHERE IdUsuarios='".$id."'");
+	$statement=$this->getCnx()->prepare("select * from usuarios ORDER BY NombreUsuarios");
+	$statement->execute();
+	$fila;
+	foreach ($statement as $key) {
+	$fila[0]=$key['IdUsuarios'];
+    $fila[1]=$key['NombreUsuarios'];
+    $fila[2]=$key['ApellidoUsuarios'];
+    $fila[3]=$key['EmailUsuarios'];
+    $fila[4]=$key['ContrasenaUsuarios'];
+    $fila[5]=$key['IdRoles'];
+	$fila[6]=$key['IdTipos'];
+	$fila[7]=$key['Eps'];
+	}
+	
+return $fila;
+
 }
+
 }
+//
+$obj=new Consultar();
+$consulta= $obj->consultarPersona($_GET['IdUsuarios']);
+echo '*****************'.var_dump($consulta[0]);
 
 ?>
 <!DOCTYPE html>

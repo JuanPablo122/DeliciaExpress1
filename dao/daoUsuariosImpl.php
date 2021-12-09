@@ -40,8 +40,7 @@ public function modificar(Usuarios $a){
     $IdRoles=$a->getIdRoles();
     $IdTipos=$a->getIdTipos();
     $Eps=$a->getEps();
-    $sql="UPDATE usuarios
-    SET NombreUsuarios ='$NombreUsuarios', ApellidoUsuarios ='$ApellidoUsuarios', EmailUsuarios = '$EmailUsuarios', ContrasenaUsuarios = '$ContrasenaUsuarios', IdRoles = '$IdRoles', IdTipos = '$IdTipos', Eps = '$Eps'
+    $sql="UPDATE usuarios SET NombreUsuarios ='$NombreUsuarios', ApellidoUsuarios ='$ApellidoUsuarios', EmailUsuarios = '$EmailUsuarios', ContrasenaUsuarios = '$ContrasenaUsuarios', IdRoles = '$IdRoles', IdTipos = '$IdTipos', Eps = '$Eps'
     WHERE IdUsuarios ='$IdUsuarios'";
     $stmt=$this->getCnx()->prepare($sql);
     $stmt->execute();
